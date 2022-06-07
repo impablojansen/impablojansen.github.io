@@ -34,11 +34,9 @@ h2 {
 }
 
 .social-media {
-
     margin-top: 1rem;
     display: flex;    
     flex-direction: column;
-
 }
 
 .social-media a {
@@ -143,15 +141,15 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 180%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     transition: 200ms ease-in-out 0s;
-    /*opacity: 0;
-    visibility: hidden;*/
+
+    
 }
 
 .menu-items ul {
@@ -193,11 +191,55 @@ a:hover {
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    box-shadow: 0px 0px 0px 90vmax #ffffff;
     z-index: 1;
 }
 
 #toggle-checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
+}
+
+/* CARDS */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 3rem 0 0;
+    background-image: url('./img-test.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.5);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.card-text {
+    width: 40%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(109,109,109)
 }
