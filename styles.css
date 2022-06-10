@@ -54,6 +54,12 @@ h2 {
     letter-spacing: 4px;
 }
 
+
+h4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 .container-nome {
     display: flex;
     justify-content: center;
@@ -78,7 +84,7 @@ h2 {
     color: #34495E;
     margin: 5px;
     text-decoration: none;
-    color: ;
+    /*color: ;*/
     font-size: 24px;
     padding: 1rem 4rem;
     border: 1px solid #34495E;
@@ -267,7 +273,6 @@ h2 {
 }
 
 .card {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,12 +280,28 @@ h2 {
     transition: 0.3s;
 }
 
-.card-text {
-    width: 40%;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    color: rgb(109,109,109)
+.card-img-container {
+    /*background-image: url('./img-test.jpg');*/
+    height: 177px;
+    width: 250px;
+    margin: 1rem 0 1rem 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.5s;
 }
+
+.card-img-container:hover {
+    height: 354px;
+    width: 500px;
+    filter: none;
+}
+
 
 .container-iframe {
 	width: 80%;
@@ -298,6 +319,37 @@ h2 {
 	left: 12px;
 	top: -3px;
 	display: block;
+}
+
+.container-img {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	border-top: 1px solid #BDC3C7;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-img::before {
+	content: "";
+	width: 5%;
+	height: 6px;
+	background: #2C3E50;
+	position: relative;
+	left: 12px;
+	top: -3px;
+	display: block;
+
+}
+
+.card-text {
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 4rem;
+    width: 40%;
+    height: 50%;
+    
+    letter-spacing: 1px;
 }
 
 .iframe-text {
