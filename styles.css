@@ -21,15 +21,13 @@ body {
 
 .header-wrapper {
     color: black;
-    height: 100vh;
     width: 100%;
     position: relative;
-
 }
 
 .header-top {
 	width: 100%;
-	height: 10%;
+	height: 60px;
 	background: linear-gradient(-45deg, #050404, #2C3E50, #34495E, #95A5A6);
     background-size: 100% 100%;
     animation: backgroundTransition 60s ease-in-out infinite;
@@ -40,8 +38,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    height: 90%;
+    height: calc(100vh - 60px);
     background-color: #ECF0F1;
+    /* background-color: red; */
 }
 
 h1 {
@@ -251,13 +250,13 @@ h2 {
 /* CARDS */
 
 .container {
+    background-color: #ECF0F1;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0;
 }
 
 .card-container {
@@ -268,19 +267,12 @@ h2 {
 }
 
 .card {
-    height: 300px;
-    width: 400px;
-    margin: 3rem 0 0;
-    background-image: url('./img-test.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     display: flex;
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
     color: #ffffff;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -289,4 +281,40 @@ h2 {
     font-family: sans-serif;
     letter-spacing: 1px;
     color: rgb(109,109,109)
+}
+
+.container-iframe {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	border-top: 1px solid #BDC3C7;
+}
+
+.container-iframe::before {
+	content: "";
+	width: 5%;
+	height: 6px;
+	background: #2C3E50;
+	position: relative;
+	left: 12px;
+	top: -3px;
+	display: block;
+}
+
+.iframe-text {
+    justify-content: center;
+    align-items: center;
+	padding: 1rem 3rem;
+}
+
+.iframe-item {
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 23px 1px;
+	width: 100%;
+	margin: 0 0 4rem;
+}
+
+.iframe-item > iframe {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
 }
