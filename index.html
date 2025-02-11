@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Para Minha Amada</title>
+    <title>P&B</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       body {
         background-color: #FFF2F2;
@@ -13,58 +14,99 @@
     </style>
   </head>
   <body class="flex flex-col items-center min-h-screen p-6">
-    <header class="bg-[#2D336B] w-full py-6 text-white text-center rounded-lg shadow-lg">
-      <h1 class="text-4xl font-bold">Para minha amada ❤️</h1>
+    <header class="w-full py-6 text-white text-center rounded-lg" data-aos="fade-down">
+      <h1 class="text-4xl font-bold text-[#2D336B]">Para minha neném ❤️</h1>
     </header>
 
-    <main class="mt-8 w-full max-w-4xl">
-      <!-- Frase Inicial -->
-      <section class="text-center mb-10">
-        <h2 class="text-2xl font-semibold text-[#2D336B]">
-          "Cada momento com você é uma página especial na minha vida."
-        </h2>
-      </section>
+    <main class="w-full max-w-4xl">
 
-      <!-- Galeria de Fotos -->
-      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="relative overflow-hidden rounded-xl shadow-lg">
-          <img src="https://placehold.co/400x300" alt="Foto 1" class="w-full object-cover" />
-        </div>
-        <div class="relative overflow-hidden rounded-xl shadow-lg">
-          <img src="https://placehold.co/400x300" alt="Foto 2" class="w-full object-cover" />
-        </div>
-        <div class="relative overflow-hidden rounded-xl shadow-lg">
-          <img src="https://placehold.co/400x300" alt="Foto 3" class="w-full object-cover" />
-        </div>
-        <div class="relative overflow-hidden rounded-xl shadow-lg">
-          <img src="https://placehold.co/400x300" alt="Foto 4" class="w-full object-cover" />
-        </div>
-      </section>
-
-      <!-- Frase Especial -->
-      <section class="mt-10 text-center">
-        <p class="text-lg text-[#7886C7] italic">
-          "O amor não se explica, apenas se sente. E eu sinto isso todos os dias por você."
-        </p>
-      </section>
-
-      <!-- Botão para Música -->
-      <section class="flex justify-center mt-10">
+    <!-- Botão para Música -->
+      <section class="flex justify-center m-4" data-aos="fade-up">
         <button
           id="play-button"
           class="bg-[#2D336B] text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#7886C7] focus:outline-none"
         >
           🎵 Tocar Música
         </button>
-        <audio id="romantic-music" src="your-music-file.mp3" preload="auto"></audio>
+        <audio id="romantic-music" src="pensando_em_voce.mp3" preload="auto"></audio>
+
       </section>
+      <!-- Frase Inicial -->
+      <section class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-2xl font-semibold text-[#2D336B]">
+          Cada momento com você é uma página especial na minha vida.
+        </h2>
+      </section>
+
+      <!-- Galeria de Fotos com Frases -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up">
+          <img src="./images/foto1.jpg" alt="Primeiro encontro" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">Desde o primeiro encontro, no começo de tudo.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/foto2.jpg" alt="Pandemia" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">Sobrevivendo aos momentos mais apocalípticos juntos.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/foto3.jpg" alt="Saídas" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">Se aventurando por novos lugares.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/foto4.jpg" alt="Posse" class="w-full object-cover" />
+            <p class="text-center text-[#A9B5DF] m-2 italic">Seja nos momentos importantes...</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto5.jpg" alt="Aniversário" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">...especiais...</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto6.jpg" alt="Viagem" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">...ou só de lazer.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto7.jpeg" alt="Ida" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">Seja na ida...</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto8.jpeg" alt="Volta" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">...ou na volta.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto9.jpg" alt="Gata olhando pela janela" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">Com uma espectadora...</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto10.jpg" alt="Goat" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">...ou com 95 mil.</p>
+        </div>
+        <div class="bg-[#2D336B] relative overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/foto11.jpg" alt="Ida" class="w-full object-cover" />
+          <p class="text-center text-[#A9B5DF] m-2 italic">O que importa é estarmos juntos!</p>
+        </div>
+      </section>
+
+      <!-- Frase Especial -->
+      <section class="bg-[#2D336B] rounded-xl shadow-lg mt-10 text-center p-2" data-aos="fade-up">
+        <p class="text-center text-[#A9B5DF] m-2 italic">
+          Pois o amor não se explica, apenas se sente. E eu sinto isso todos os dias por você.
+        </p>
+        <p class="text-center text-[#A9B5DF] m-2 italic">
+            Feliz 5 anos, mo! <br/> Te amo!
+        </p>
+      </section>
+
+
     </main>
 
     <footer class="mt-12 text-sm text-center text-[#2D336B]">
-      Feito com ❤️ por você, para o amor da sua vida.
+      Feito com ❤️
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      AOS.init();
+      
       const playButton = document.getElementById('play-button');
       const audio = document.getElementById('romantic-music');
       let isPlaying = false;
