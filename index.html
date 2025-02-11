@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Pablo Jansen</title>
-</head>
-
-<body>
-    <header class="header-wrapper">
-        <section class="header-top">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu">
-                        <nav class="menu-items">
-                            <ul>
-                                <li>
-                                    <a href="./index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="./certificados.html">Certificados</a>
-                                </li>
-                                <li>
-                                    <a href="./projetos.html">Projetos</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="header-bottom">
-            <div class="container-nome">
-                <h1>Pablo Jansen</h1>
-                <h2>Analista de BI</h2>
-            </div>
-            <div class="social-media-card">
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/pablo-jansen-dqm/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/impablojansen" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para Minha Amada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #FFF2F2;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col items-center min-h-screen p-6">
+    <header class="bg-[#2D336B] w-full py-6 text-white text-center rounded-lg shadow-lg">
+      <h1 class="text-4xl font-bold">Para Minha Amada ❤️</h1>
+      <p class="mt-2 text-[#A9B5DF]">Um presente feito com amor</p>
     </header>
 
-    <!--
-    <main class="container">
-        <div class="card-container">
-            <div class="card-text">
-                bla bla bla bla bla
-            </div>
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>GitHub</h2>
-                    <p>Veja meus projetos</p>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
+    <main class="mt-8 w-full max-w-4xl">
+      <!-- Frase Inicial -->
+      <section class="text-center mb-10">
+        <h2 class="text-2xl font-semibold text-[#2D336B]">
+          "Cada momento com você é uma página especial na minha vida."
+        </h2>
+      </section>
 
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>GitHub</h2>
-                    <p>Veja meus projetos</p>
-                </div>
-            </div>
-            <div class="card-text">
-                bla bla bla bla bla
-            </div>
+      <!-- Galeria de Fotos -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative overflow-hidden rounded-xl shadow-lg">
+          <img src="https://via.placeholder.com/400x300" alt="Foto 1" class="w-full object-cover" />
         </div>
-        <div class="card-container">
-            <div class="card-text">
-                bla bla bla bla bla
-            </div>
-            <div class="card">
-                <div class="card-wrapper">
-                    <h2>GitHub</h2>
-                    <p>Veja meus projetos</p>
-                </div>
-            </div>
+        <div class="relative overflow-hidden rounded-xl shadow-lg">
+          <img src="https://via.placeholder.com/400x300" alt="Foto 2" class="w-full object-cover" />
         </div>
+        <div class="relative overflow-hidden rounded-xl shadow-lg">
+          <img src="https://via.placeholder.com/400x300" alt="Foto 3" class="w-full object-cover" />
+        </div>
+        <div class="relative overflow-hidden rounded-xl shadow-lg">
+          <img src="https://via.placeholder.com/400x300" alt="Foto 4" class="w-full object-cover" />
+        </div>
+      </section>
+
+      <!-- Frase Especial -->
+      <section class="mt-10 text-center">
+        <p class="text-lg text-[#7886C7] italic">
+          "O amor não se explica, apenas se sente. E eu sinto isso todos os dias por você."
+        </p>
+      </section>
+
+      <!-- Botão para Música -->
+      <section class="flex justify-center mt-10">
+        <button
+          id="play-button"
+          class="bg-[#2D336B] text-white px-6 py-3 rounded-xl shadow-md hover:bg-[#7886C7] focus:outline-none"
+        >
+          🎵 Tocar Música
+        </button>
+        <audio id="romantic-music" src="your-music-file.mp3" preload="auto"></audio>
+      </section>
     </main>
-    -->
 
-</body>
+    <footer class="mt-12 text-sm text-center text-[#2D336B]">
+      Feito com ❤️ por você, para o amor da sua vida.
+    </footer>
 
+    <script>
+      const playButton = document.getElementById('play-button');
+      const audio = document.getElementById('romantic-music');
+      let isPlaying = false;
+
+      playButton.addEventListener('click', () => {
+        if (isPlaying) {
+          audio.pause();
+          playButton.textContent = '🎵 Tocar Música';
+        } else {
+          audio.play();
+          playButton.textContent = '⏸️ Pausar Música';
+        }
+        isPlaying = !isPlaying;
+      });
+    </script>
+  </body>
 </html>
